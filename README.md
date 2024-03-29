@@ -23,7 +23,7 @@ Pour utiliser ce module, suivez ces étapes :
 
 Voici comment vous pouvez utiliser ltu-jsdocs-generator avec Wincc Unified 
 
-1. Importer vos scripts de projet Wincc Unified à l'aide l'add-on Wincc Unified JSConnector : [SIOS ID: 109825899](https://support.industry.siemens.com/cs/document/109825899/simatic-wincc-unified-js-connector?dti=0&lc=en-KZ)
+1. Importer vos scripts de projet Wincc Unified à l'aide l'add-on Wincc Unified JSConnector : [SIOS ID: 109825899]{:target="_blank"}(https://support.industry.siemens.com/cs/document/109825899/simatic-wincc-unified-js-connector?dti=0&lc=en-KZ)
 
 2. Executer la commande suivante :
 
