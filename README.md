@@ -1,3 +1,3 @@
 # ltu-jsdocs-generator
-Générer la documentation javascript 
-docdash
+Générer la documentation javascript de vos projets.
+#docdash
