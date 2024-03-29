@@ -1,0 +1,17 @@
+{
+    "name": "ltu-javascript-documentation",
+    "version": "1.0.0",
+    "description": "LTU - Libarary Tia Potal Unified - est une biblithèque de programmation automatisme destinées aux logiciels TIA PORTAL et WINCC UNIFIED. Cette documentation assemble les différents scripts utilisés au sein des SCADA et HMI dans les projets LTU.   ",
+    "main": "./src/",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "jsdoc": "jsdoc -c jsdoc.json ./src/ && jsdoc2md --files ./src/*.js > output-docs/API.md"
+    },
+    "author": "Thomas HEURTAULT",
+    "license": "ISC",
+    "devDependencies": {
+        "docdash": "^1.2.0",
+        "jsdoc": "^3.6.11",
+        "jsdoc-to-markdown": "^6.0.1"
+    }
+}

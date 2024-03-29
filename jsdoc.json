@@ -1,0 +1,71 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "opts": {
+        "template": "template/docdash-ltu",
+        "encoding": "utf8",
+        "destination": "./output-docs/JSdocs",
+        "recurse": true,
+        "verbose": true,
+        "readme" : "README.md"
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "markdown": {
+        "parser": "gfm",
+        "hardwrap": true,
+        "idInHeadings": true
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "default": {
+            "outputSourceFiles": true,
+            "includeDate": true,
+            "useLongnameInNav": true
+        }
+    },
+    "docdash": {
+        "static": true,
+        "sort": true,
+        "sectionOrder": [              
+                "Classes",
+                "Modules",
+                "Externals",
+                "Events",
+                "Namespaces",
+                "Mixins",
+                "Tutorials",
+                "Interfaces"
+        ],
+        "search": true,
+        "commonNav": true,
+        "collapse": false,
+        "typedefs": true,
+        "removeQuotes": "none",
+        "scripts": [],
+        "menu":{
+            "Portail AgroMousquetaires": {
+                "href":"https://mousquetaires.sharepoint.com/sites/Portail-AgroM/",
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"portail-agrom"
+            },
+            "Portail OT ": {
+                "href":"https://mousquetaires.sharepoint.com/sites/AgroM_Portail_OT",
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"portail-ot"
+            },
+            "GitHub Repo ": {
+                "href":"https://github.com/Thomas-dvpt/ltu-jsdocs-generator.git",
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"repository"
+            }
+            
+        }
+    }
+}
