@@ -1,0 +1,28 @@
+:root {
+    --main-text-color: #ffffff; /* Blanc pour le texte principal */
+    --background-color: #283739; /* Couleur de fond */
+    --link-color: #a2c11c; /* Couleur des liens */
+    --link-hover-color: #2c5d63; /* Couleur des liens au survol */
+    --heading-color: #e0e0e0; /* Couleur des titres */
+    --heading-background: #2c5d63; /* Arrière-plan des titres */
+    --heading-link-color: #ffffff; /* Couleur des liens dans les titres */
+    --subheading-color: #ffffff; /* Couleur des sous-titres */
+    --code-background: #f0f0f0; /* Arrière-plan du code */
+    --nav-background: #283739; /* Arrière-plan de la navigation */
+    --nav-text-color: #ffffff; /* Couleur du texte de la navigation */
+    --nav-subtext-color: #a2c11c; /* Couleur du sous-texte de la navigation */
+    --important-color: #a2c11c; /* Couleur des éléments importants */
+    --signature-color: #ffffff; /* Couleur des signatures */
+    --footer-text-color: #ffffff; /* Couleur du texte du pied de page */
+    --overlay-color: rgba(0, 0, 0, 0.5); /* Couleur de superposition semi-transparente */
+    --code-caption-color: #283739; /* Couleur des légendes de code */
+    --table-border-color: #283739; /* Couleur de la bordure du tableau */
+    --table-background: #ffffff; /* Fond des tableaux */
+    --table-text-color: #283739; /* Couleur du texte du tableau */
+    --table-heading-background: #2c5d63; /* Arrière-plan de l'en-tête du tableau */
+    --table-heading-text-color: #ffffff; /* Couleur du texte de l'en-tête du tableau */
+  }
+
+
+
+  

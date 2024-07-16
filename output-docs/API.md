@@ -2,16 +2,18 @@
 
 <dl>
 <dt><a href="#global">global</a> : <code>object</code></dt>
-<dd><p>Description de mon nameSpace</p>
+<dd><p>Les fonctions de ce namespace sont utilisées pour paramétrer l&#39;interface utilisateur en activant ou désactivant certaines fonctionnalitées.
+             Elles sont à paramétrées à chaque nouveau projet.</p>
 </dd>
 <dt><a href="#general">general</a> : <code>object</code></dt>
-<dd><p>Description de mon nameSpace</p>
+<dd><p>Les fonctions de ce namespace sont utilisées aussi bien dans l&#39;interface utilisateurs que dans les autres fonctions du modules @LTU_scripts.</p>
 </dd>
 <dt><a href="#screenLayout">screenLayout</a> : <code>object</code></dt>
-<dd><p>Description de mon nameSpace</p>
+<dd><p>Les fonctions de ce namespace sont utilisées pour gérer la mise en page de l&#39;interface utilisateur des environnements LTU.
+             Elles permettent entre autre de dynamiser les différents niveaux de menus.</p>
 </dd>
 <dt><a href="#screenHistory">screenHistory</a> : <code>object</code></dt>
-<dd><p>Description de mon nameSpace</p>
+<dd><p>Les fonctions de ce namespace sont utilisées pour gérer les piles de navigation &quot;précédent&quot;, &quot;suivant&quot; dans l&#39;interface utilisateurs des envrionenemnts LTU.</p>
 </dd>
 </dl>
 
@@ -47,7 +49,7 @@
 <a name="global"></a>
 
 ## global : <code>object</code>
-Description de mon nameSpace
+Les fonctions de ce namespace sont utilisées pour paramétrer l'interface utilisateur en activant ou désactivant certaines fonctionnalitées.             Elles sont à paramétrées à chaque nouveau projet.
 
 **Kind**: global namespace  
 
@@ -65,7 +67,7 @@ Cette fonction initialise des paramètres au lancement de la page web.
 
 - <code>Error</code> 
 
-**Since**: 2.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 2.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 2.0.1  
 **Author**: Thomas HEURTAULT  
 <a name="global._config"></a>
@@ -74,13 +76,13 @@ Cette fonction initialise des paramètres au lancement de la page web.
 Description de ma fonction
 
 **Kind**: static method of [<code>global</code>](#global)  
-**Since**: 1.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 1.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 3.0.1  
 **Author**: Thomas HEURTAULT  
 <a name="general"></a>
 
 ## general : <code>object</code>
-Description de mon nameSpace
+Les fonctions de ce namespace sont utilisées aussi bien dans l'interface utilisateurs que dans les autres fonctions du modules @LTU_scripts.
 
 **Kind**: global namespace  
 
@@ -99,9 +101,9 @@ Enregistre des messages de trace avec des paramètres d'entrée spécifiques
 
 - <code>Error</code> - Paramètres d'entrée invalides
 
-**Since**: 3.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 3.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 3.0.1  
-**Author**: Thomas HEURTAULT  
+**Author**: Thomas Heurtault <thomas.heurtault@mousquetaires.com>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -135,9 +137,9 @@ Effectue des opérations d'audit en enregistrant des messages selon le type spé
 
 - <code>Error</code> - Paramètres d'entrée invalides
 
-**Since**: 3.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 3.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 3.0.1  
-**Author**: Thomas HEURTAULT  
+**Author**: Thomas Heurtault <thomas.heurtault@mousquetaires.com>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -157,9 +159,9 @@ Effectue des opérations d'audit en enregistrant des messages selon le type spé
 
 - <code>Error</code> - Erreur qui peut être levée en cas de problème lors de l'exécution de la fonction
 
-**Since**: 2.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 2.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 2.0.1  
-**Author**: Thomas HEURTAULT  
+**Author**: Thomas Heurtault <thomas.heurtault@mousquetaires.com>  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -169,7 +171,7 @@ Effectue des opérations d'audit en enregistrant des messages selon le type spé
 <a name="screenLayout"></a>
 
 ## screenLayout : <code>object</code>
-Description de mon nameSpace
+Les fonctions de ce namespace sont utilisées pour gérer la mise en page de l'interface utilisateur des environnements LTU.             Elles permettent entre autre de dynamiser les différents niveaux de menus.
 
 **Kind**: global namespace  
 
@@ -191,7 +193,7 @@ Cette fonction, filtre les objets "LTU_PO_Screen" de Plant Object,pour récupér
 
 - <code>Error</code> 
 
-**Since**: 2.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 2.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 2.0.1  
 **Author**: Thomas HEURTAULT  
 <a name="screenLayout.screenLayout_setHierarchyNodes"></a>
@@ -205,7 +207,7 @@ Cette fonction définit le nœud racine de l'objet "Plant_Navigation" et sélect
 
 - <code>Error</code> -
 
-**Since**: 2.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 2.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 2.0.1  
 **Author**: Thomas HEURTAULT  
 
@@ -224,7 +226,7 @@ Cette fonction configure les boutons de navigation pour les éléments de niveau
 
 - <code>Error</code> - Erreur qui peut être levée en cas de problème lors de l'exécution de la fonction.
 
-**Since**: 3.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 3.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 3.0.1  
 **Author**: Thomas HEURTAULT  
 <a name="screenLayout.screenLayout_getHierarchyInfos"></a>
@@ -238,7 +240,7 @@ Cette fonction récupère des informations à partir d'un objet PlantNavigation.
 
 - <code>Error</code> - Erreur qui peut être levée en cas de problème lors de l'exécution de la fonction.
 
-**Since**: 2.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 2.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 2.0.1  
 **Author**: Thomas HEURTAULT  
 <a name="screenLayout.screenLayout_setSecondLevelNavigation"></a>
@@ -252,7 +254,7 @@ Cette fonction parcourt les éléments de navigation de second niveau fournis, p
 
 - <code>Error</code> - Erreur qui peut être levée en cas de problème lors de l'exécution de la fonction.
 
-**Since**: 1.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 1.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 1.0.1  
 **Author**: Thomas HEURTAULT  
 
@@ -264,7 +266,7 @@ Cette fonction parcourt les éléments de navigation de second niveau fournis, p
 <a name="screenHistory"></a>
 
 ## screenHistory : <code>object</code>
-Description de mon nameSpace
+Les fonctions de ce namespace sont utilisées pour gérer les piles de navigation "précédent", "suivant" dans l'interface utilisateurs des envrionenemnts LTU.
 
 **Kind**: global namespace  
 
@@ -285,7 +287,7 @@ Cette fonction gère l'historique de navigation.Elle ajoute le nom de l'écran 
 
 - <code>Error</code> 
 
-**Since**: 1.0.1  | 01/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 1.0.1  | 01/2024   | THT    | implement JSDoc  
 **Version**: 1.0.1  
 **Author**: Thomas HEURTAULT  
 
@@ -303,7 +305,7 @@ Cette fonction est responsable de naviguer vers l'écran précédent dans l'hist
 
 - <code>Error</code> - Erreur qui peut être levée en cas de problème lors de la navigation vers l'écran précédent.
 
-**Since**: 1.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 1.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 1.0.1  
 **Author**: Thomas HEURTAULT  
 <a name="screenHistory.screenHistory_goForwardScreen"></a>
@@ -316,7 +318,7 @@ Cette fonction est responsable de naviguer vers l'écran suivant dans l'historiq
 
 - <code>Error</code> - Erreur qui peut être levée en cas de problème lors de la navigation vers l'écran suivant
 
-**Since**: 1.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc
+**Since**: 1.0.1  | 03/2024   | THT    | implement JSDoc
 .  
 **Version**: 1.0.1  
 **Author**: Thomas HEURTAULT  
@@ -330,7 +332,7 @@ Cette fonction crée les DataSets nécessaires pour stocker l'historique de navi
 
 - <code>Error</code> - Erreur qui peut être levée en cas de problème lors de la navigation vers l'écran suivant
 
-**Since**: 1.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 1.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 1.0.1  
 **Author**: Thomas HEURTAULT  
 <a name="screenHistory.screenHistory_updateButtonState"></a>
@@ -343,7 +345,7 @@ Cette fonction est responsable de mettre à jour l'état des boutons de navigati
 
 - <code>Error</code> - Erreur qui peut être levée en cas de problème lors de la mise à jour de l'état des boutons.
 
-**Since**: 1.0.1  | 03/2024   | Thomas Heurtault  | implement JSDoc  
+**Since**: 1.0.1  | 03/2024   | THT    | implement JSDoc  
 **Version**: 1.0.1  
 **Author**: Thomas HEURTAULT  
 <a name="CHECK_INTERVAL"></a>

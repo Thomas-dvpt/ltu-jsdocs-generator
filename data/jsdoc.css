@@ -1,5 +1,30 @@
+:root {
+  --main-text-color: #ffffff; /* Blanc pour le texte principal */
+  --background-color: #283739; /* Couleur de fond */
+  --link-color: #a2c11c; /* Couleur des liens */
+  --link-hover-color: #2c5d63; /* Couleur des liens au survol */
+  --heading-color: #e0e0e0; /* Couleur des titres */
+  --heading-background: #2c5d63; /* Arrière-plan des titres */
+  --heading-link-color: #ffffff; /* Couleur des liens dans les titres */
+  --subheading-color: #ffffff; /* Couleur des sous-titres */
+  --code-background: #f0f0f0; /* Arrière-plan du code */
+  --nav-background: #283739; /* Arrière-plan de la navigation */
+  --nav-text-color: #ffffff; /* Couleur du texte de la navigation */
+  --nav-subtext-color: #a2c11c; /* Couleur du sous-texte de la navigation */
+  --important-color: #a2c11c; /* Couleur des éléments importants */
+  --signature-color: #ffffff; /* Couleur des signatures */
+  --footer-text-color: #ffffff; /* Couleur du texte du pied de page */
+  --overlay-color: rgba(0, 0, 0, 0.5); /* Couleur de superposition semi-transparente */
+  --code-caption-color: #283739; /* Couleur des légendes de code */
+  --table-border-color: #283739; /* Couleur de la bordure du tableau */
+  --table-background: #ffffff; /* Fond des tableaux */
+  --table-text-color: #283739; /* Couleur du texte du tableau */
+  --table-heading-background: #2c5d63; /* Arrière-plan de l'en-tête du tableau */
+  --table-heading-text-color: #ffffff; /* Couleur du texte de l'en-tête du tableau */
+}
+
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 html, body {
@@ -8,10 +33,10 @@ html, body {
 }
 
 body {
-  color: #8e8e93;
-  background-color: #ebebeb;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
   margin: 0 auto;
-  padding: 0 0px;
+  padding: 0 20px;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
 }
@@ -22,7 +47,7 @@ img {
 
 a,
 a:active {
-  color: #afbe24;
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -31,15 +56,15 @@ a:hover {
 }
 
 article a {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 article a:hover, article a:active {
-  border-bottom-color: #222;
+  border-bottom-color: var(--link-hover-color);
 }
 
 article .description a {
-    word-break: break-word;
+  word-break: break-word;
 }
 
 p, ul, ol, blockquote {
@@ -52,8 +77,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #404040;
-  font-weight: bold;
+  color: var(--heading-color);
+  font-weight: 400;
   margin: 0;
 }
 
@@ -73,8 +98,6 @@ h1.page-title {
 h2 {
   font-size: 24px;
   margin: 1.5em 0 .3em;
-  border-bottom: 2px solid rgb(175,190,36); /* Crée une bordure sous le titre */
-  padding-bottom: 0.5em; /* Ajoute un peu d'espace entre le titre et la bordure */
 }
 
 h3 {
@@ -85,12 +108,12 @@ h3 {
 h4 {
   font-size: 18px;
   margin: 1em 0 .2em;
-  color: #4d4e53;
+  color: var(--main-text-color);
 }
 
 h4.name {
-  color: #404040;
-  background: #afbe2480;
+  color: #fff;
+  background: var(--heading-background);
   box-shadow: 0 .25em .5em #d3d3d3;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
@@ -99,11 +122,11 @@ h4.name {
 }
 
 h4.name a {
-  color: #fc83ff;
+  color: var(--heading-link-color);
 }
 
 h4.name a:hover {
-  border-bottom-color: #fc83ff;
+  border-bottom-color: var(--heading-link-color);
 }
 
 h5, .container-overview .subsection-title {
@@ -131,7 +154,6 @@ h6 {
   font-size: 18px;
   margin: 2em 0 0.5em;
   font-weight: 400;
-
 }
 
 .usertext h3 {
@@ -152,7 +174,7 @@ h6 {
   font-size: 12px;
   margin: 1em 0 0;
   font-weight: normal;
-  color: #666;
+  color: var(--subheading-color);
 }
 
 .usertext h6 {
@@ -160,13 +182,12 @@ h6 {
   margin: 1em 0 0;
   font-weight: normal;
   font-style: normal;
-  color: #666;
+  color: var(--subheading-color);
 }
-
 
 tt, code, kbd, samp {
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  background: #f4f4f4;
+  background: var(--code-background);
   padding: 1px 5px;
 }
 
@@ -178,7 +199,7 @@ tt, code, kbd, samp {
 }
 
 .class-description:empty {
-  margin: 0
+  margin: 0;
 }
 
 #main {
@@ -187,17 +208,17 @@ tt, code, kbd, samp {
 }
 
 header {
-  display: block
+  display: block;
 }
 
 section {
   display: block;
-  background-color: #ebebeb;
+  background-color: var(--background-color);
   padding: 0 0 0 30px;
 }
 
 .variation {
-  display: none
+  display: none;
 }
 
 .signature-attributes {
@@ -211,25 +232,25 @@ nav {
   float: left;
   display: block;
   width: 250px;
-  background: #404040;
+  background: var(--nav-background);
   overflow: auto;
   position: fixed;
   height: 100%;
 }
 
-nav #nav-search{
-    width: 210px;
-    height: 30px;
-    padding: 5px 10px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 3px;
-    margin-right: 20px;
-    margin-top: 20px;
+nav #nav-search {
+  width: 210px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
-nav.wrap a{
-    word-wrap: break-word;
+nav.wrap a {
+  word-wrap: break-word;
 }
 
 nav h3 {
@@ -241,7 +262,7 @@ nav h3 {
   line-height: 24px;
   margin: 15px 0 10px;
   padding: 0;
-  color: #afbe24;
+  color: var(--main-text-color);
 }
 
 nav ul {
@@ -260,12 +281,11 @@ nav ul a:active {
   padding: 0;
   display: block;
   font-size: 12px;
-  font-weight: bold;
 }
 
 nav a:hover,
 nav a:active {
-  color: #afbe24;;
+  color: var(--link-color);
 }
 
 nav > ul {
@@ -273,34 +293,33 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  color: #f2f2f2;
+  color: var(--link-color);
   margin-top: 10px;
 }
 
 nav ul ul a {
-  color: rgb(242 242 242);
-  border-left: 1px solid rgb(242 242 242);
+  color: var(--nav-subtext-color);
+  border-left: 1px solid var(--nav-subtext-color);
 }
 
 nav ul ul a,
 nav ul ul a:active {
-  padding-left: 20px
+  padding-left: 20px;
 }
 
 nav h2 {
-   font-size: 13px;
-   margin: 10px 0 0 0;
-   padding: 0;
+  font-size: 13px;
+  margin: 10px 0 0 0;
+  padding: 0;
 }
 
 nav > h2 > a {
-   margin: 10px 0 -10px;
-   color: #AFBE24 !important;
-   border-bottom: 0px solid rgb(175, 190, 36);
+  margin: 10px 0 -10px;
+  color: var(--link-color) !important;
 }
 
 footer {
-  color: hsl(0, 0%, 28%);
+  color: var(--footer-text-color);
   margin-left: 250px;
   display: block;
   padding: 15px;
@@ -309,40 +328,40 @@ footer {
 }
 
 .ancestors {
-  color: #999
+  color: var(--subheading-color);
 }
 
 .ancestors a {
-   color: #999 !important;
+  color: var(--subheading-color) !important;
 }
 
 .clear {
-  clear: both
+  clear: both;
 }
 
 .important {
   font-weight: bold;
-  color: #950B02;
+  color: var(--important-color);
 }
 
 .yes-def {
-  text-indent: -1000px
+  text-indent: -1000px;
 }
 
 .type-signature {
-  color: #8e8e8e
+  color: var(--signature-color);
 }
 
 .type-signature:last-child {
-  color: #8e8e8e;
+  color: #eee;
 }
 
 .name, .signature {
-  font-family: Consolas, Monaco, 'Andale Mono', monospace
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
 }
 
 .signature {
-    color: #ee312490;
+  color: var(--heading-link-color);
 }
 
 .details {
@@ -353,31 +372,31 @@ footer {
 }
 
 .details dt {
-   width: auto;
-   float: left;
-   padding-left: 10px;
+  width: auto;
+  float: left;
+  padding-left: 10px;
 }
 
 .details dd {
-   margin-left: 70px;
-   margin-top: 6px;
-   margin-bottom: 6px;
+  margin-left: 70px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .details ul {
-   margin: 0
+  margin: 0;
 }
 
 .details ul {
-   list-style-type: none
+  list-style-type: none;
 }
 
 .details pre.prettyprint {
-   margin: 0
+  margin: 0;
 }
 
 .details .object-value {
-   padding-top: 0
+  padding-top: 0;
 }
 
 .description {
@@ -400,15 +419,15 @@ footer {
   width: inherit;
   line-height: 18px;
   display: block;
-  background-color: #0d152a;
-  color: #aeaeae;
+  background-color: var(--table-background);
+  color: var(--table-text-color);
 }
 
 .prettyprint code {
   line-height: 18px;
   display: block;
-  background-color: #404040;
-  color: #4D4E53;
+  background-color: var(--table-background);
+  color: var(--main-text-color);
 }
 
 .prettyprint > code {
@@ -416,15 +435,15 @@ footer {
 }
 
 .prettyprint .linenums code {
-  padding: 0 15px
+  padding: 0 15px;
 }
 
 .prettyprint .linenums li:first-of-type code {
-  padding-top: 15px
+  padding-top: 15px;
 }
 
 .prettyprint code span.line {
-  display: inline-block
+  display: inline-block;
 }
 
 .prettyprint.linenums {
@@ -436,53 +455,53 @@ footer {
 }
 
 .prettyprint.linenums ol {
-   padding-left: 0
+  padding-left: 0;
 }
 
 .prettyprint.linenums li {
-   border-left: 3px #34446B solid;
+  border-left: 3px var(--table-border-color) solid;
 }
 
 .prettyprint.linenums li.selected, .prettyprint.linenums li.selected * {
-   background-color: #34446B;
+  background-color: var(--table-background);
 }
 
 .prettyprint.linenums li * {
-   -webkit-user-select: text;
-   -moz-user-select: text;
-   -ms-user-select: text;
-   user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 .prettyprint.linenums li code:empty:after {
-  content:"";
-  display:inline-block;
-  width:0px;
+  content: "";
+  display: inline-block;
+  width: 0px;
 }
 
 table {
   border-spacing: 0;
-  border: 1px solid #ddd;
+  border: 1px solid var(--table-border-color);
   border-collapse: collapse;
   border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   width: 100%;
   font-size: 14px;
   margin: 1em 0;
 }
 
 td, th {
-   margin: 0px;
-   text-align: left;
-   vertical-align: top;
-   padding: 10px;
-   display: table-cell;
+  margin: 0px;
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+  display: table-cell;
 }
 
 thead tr, thead tr {
-   background-color: #404040;
-   font-weight: bold;
-   border-bottom: 1px solid #ddd;
+  background-color: var(--table-heading-background);
+  font-weight: bold;
+  border-bottom: 1px solid var(--table-border-color);
 }
 
 .params .type {
@@ -494,32 +513,32 @@ thead tr, thead tr {
 }
 
 .params td, .params .name, .props .name, .name code {
-   color: #4D4E53;
-   font-family: Consolas, Monaco, 'Andale Mono', monospace;
-   font-size: 100%;
+  color: var(--main-text-color);
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-size: 100%;
 }
 
 .params td {
-   border-top: 1px solid #eee
+  border-top: 1px solid #eee;
 }
 
 .params td.description > p:first-child, .props td.description > p:first-child {
-   margin-top: 0;
-   padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .params td.description > p:last-child, .props td.description > p:last-child {
-   margin-bottom: 0;
-   padding-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 span.param-type, .params td .param-type, .param-type dd {
-   color: #606;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace
+  color: var(--link-color);
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
 }
 
 .param-type dt, .param-type dd {
-  display: inline-block
+  display: inline-block;
 }
 
 .param-type {
@@ -527,7 +546,7 @@ span.param-type, .params td .param-type, .param-type dd {
 }
 
 .disabled {
-  color: #454545
+  color: #454545;
 }
 
 /* navicon button */
@@ -538,232 +557,95 @@ span.param-type, .params td .param-type, .param-type dd {
   transition: 0.25s;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   opacity: .8;
 }
+
 .navicon-button .navicon:before, .navicon-button .navicon:after {
   transition: 0.25s;
 }
+
 .navicon-button:hover {
   transition: 0.5s;
   opacity: 1;
 }
-.navicon-button:hover .navicon:before, .navicon-button:hover .navicon:after {
-  transition: 0.25s;
-}
-.navicon-button:hover .navicon:before {
-  top: .825rem;
-}
-.navicon-button:hover .navicon:after {
-  top: -.825rem;
-}
 
-/* navicon */
-.navicon {
-  position: relative;
-  width: 2.5em;
-  height: .3125rem;
-  background: #000;
-  transition: 0.3s;
-  border-radius: 2.5rem;
-}
-.navicon:before, .navicon:after {
-  display: block;
-  content: "";
-  height: .3125rem;
-  width: 2.5rem;
-  background: #000;
+.navicon-button .navicon:before, .navicon-button .navicon:after {
+  content: '';
   position: absolute;
-  z-index: -1;
-  transition: 0.3s 0.25s;
-  border-radius: 1rem;
-}
-.navicon:before {
-  top: .625rem;
-}
-.navicon:after {
-  top: -.625rem;
-}
-
-/* open */
-.nav-trigger:checked + label:not(.steps) .navicon:before,
-.nav-trigger:checked + label:not(.steps) .navicon:after {
-  top: 0 !important;
-}
-
-.nav-trigger:checked + label .navicon:before,
-.nav-trigger:checked + label .navicon:after {
-  transition: 0.5s;
-}
-
-/* Minus */
-.nav-trigger:checked + label {
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
-}
-
-/* × and + */
-.nav-trigger:checked + label.plus .navicon,
-.nav-trigger:checked + label.x .navicon {
-  background: transparent;
-}
-
-.nav-trigger:checked + label.plus .navicon:before,
-.nav-trigger:checked + label.x .navicon:before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  background: #FFF;
-}
-
-.nav-trigger:checked + label.plus .navicon:after,
-.nav-trigger:checked + label.x .navicon:after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background: #FFF;
-}
-
-.nav-trigger:checked + label.plus {
-  -webkit-transform: scale(0.75) rotate(45deg);
-          transform: scale(0.75) rotate(45deg);
-}
-
-.nav-trigger:checked ~ nav {
-  left: 0 !important;
-}
-
-.nav-trigger:checked ~ .overlay {
-  display: block;
-}
-
-.nav-trigger {
-  position: fixed;
   top: 0;
-  clip: rect(0, 0, 0, 0);
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
   width: 100%;
-  height: 100%;
-  background: hsla(0, 0%, 25%, 0.502);
-  z-index: 1;
+  height: 2px;
+  background-color: #222;
 }
 
-/* nav level */
-.level-hide {
-    display: none;
-}
-html[data-search-mode] .level-hide {
-    display: block;
+.navicon-button .navicon:after {
+  top: auto;
+  bottom: 0;
 }
 
+.navicon-button:hover .navicon:before {
+  transform: translateY(6px);
+}
 
-@media only screen and (max-width: 680px) {
-  body {
-    overflow-x: hidden;
+.navicon-button:hover .navicon:after {
+  transform: translateY(-6px);
+}
+
+@media screen and (max-width: 960px) {
+  nav {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #main {
+    float: none;
+    width: auto;
+  }
+
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   nav {
-    background: hsl(0, 0%, 25%);
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: -250px;
-    z-index: 3;
-    padding: 0 10px;
-    transition: left 0.2s;
+    display: none;
   }
 
   .navicon-button {
-    display: inline-block;
-    position: fixed;
-    top: 1.5em;
-    right: 0;
-    z-index: 2;
-  }
-
-  #main {
-    width: 100%;
-  }
-
-  #main h1.page-title {
-    margin: 1em 0;
-  }
-
-  #main section {
-    padding: 0;
-  }
-
-  footer {
-    margin-left: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 2.0625rem 1.5rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 }
 
-/** Add a '#' to static members */
-[data-type="member"] a::before {
-  content: '#';
-  display: inline-block;
-  margin-left: -14px;
-  margin-right: 5px;
+/* For responsive video */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
-#disqus_thread{
-    margin-left: 30px;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/Montserrat/Montserrat-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/Montserrat/Montserrat-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/Montserrat/Montserrat-Bold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/Montserrat/Montserrat-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    src: url('../fonts/Source-Sans-Pro/sourcesanspro-regular-webfont.eot');
-    src: url('../fonts/Source-Sans-Pro/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Source-Sans-Pro/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('../fonts/Source-Sans-Pro/sourcesanspro-regular-webfont.woff') format('woff'),
-         url('../fonts/Source-Sans-Pro/sourcesanspro-regular-webfont.ttf') format('truetype'),
-         url('../fonts/Source-Sans-Pro/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    src: url('../fonts/Source-Sans-Pro/sourcesanspro-light-webfont.eot');
-    src: url('../fonts/Source-Sans-Pro/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Source-Sans-Pro/sourcesanspro-light-webfont.woff2') format('woff2'),
-         url('../fonts/Source-Sans-Pro/sourcesanspro-light-webfont.woff') format('woff'),
-         url('../fonts/Source-Sans-Pro/sourcesanspro-light-webfont.ttf') format('truetype'),
-         url('../fonts/Source-Sans-Pro/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
-    font-weight: 300;
-    font-style: normal;
-
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
