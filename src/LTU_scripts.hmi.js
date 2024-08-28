@@ -7,22 +7,20 @@
  */
 /**
  * @namespace global
- * @description Les fonctions de ce namespace sont utilisées pour paramétrer l'interface utilisateur en activant ou désactivant certaines fonctionnalitées.
- *              Elles sont à paramétrées à chaque nouveau projet. 
+ * @description Description de mon nameSpace
  */
 /**
  * 
  * @namespace general
- * @description Les fonctions de ce namespace sont utilisées aussi bien dans l'interface utilisateurs que dans les autres fonctions du modules @LTU_scripts. 
+ * @description Description de mon nameSpace
  */
 /**
 * @namespace screenLayout
-* @description Les fonctions de ce namespace sont utilisées pour gérer la mise en page de l'interface utilisateur des environnements LTU.
-*              Elles permettent entre autre de dynamiser les différents niveaux de menus.  
+* @description Description de mon nameSpace
 */
 /**
 * @namespace screenHistory
-* @description Les fonctions de ce namespace sont utilisées pour gérer les piles de navigation "précédent", "suivant" dans l'interface utilisateurs des envrionenemnts LTU.
+* @description Description de mon nameSpace
 */
 
 /**
@@ -120,7 +118,7 @@ export function general_logTrace(functionName, type, message) {
  * 
  * @memberOf general
  * @function general_userAudit
- * @author Thomas Heurtault <thomas.heurtault@mousquetaires.com>
+* @author Thomas Heurtault <thomas.heurtault@mousquetaires.com>
  * @version 3.0.1
  * @description Effectue des opérations d'audit en enregistrant des messages selon le type spécifié.
    

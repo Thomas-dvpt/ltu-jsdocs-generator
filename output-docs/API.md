@@ -2,18 +2,16 @@
 
 <dl>
 <dt><a href="#global">global</a> : <code>object</code></dt>
-<dd><p>Les fonctions de ce namespace sont utilisées pour paramétrer l&#39;interface utilisateur en activant ou désactivant certaines fonctionnalitées.
-             Elles sont à paramétrées à chaque nouveau projet.</p>
+<dd><p>Description de mon nameSpace</p>
 </dd>
 <dt><a href="#general">general</a> : <code>object</code></dt>
-<dd><p>Les fonctions de ce namespace sont utilisées aussi bien dans l&#39;interface utilisateurs que dans les autres fonctions du modules @LTU_scripts.</p>
+<dd><p>Description de mon nameSpace</p>
 </dd>
 <dt><a href="#screenLayout">screenLayout</a> : <code>object</code></dt>
-<dd><p>Les fonctions de ce namespace sont utilisées pour gérer la mise en page de l&#39;interface utilisateur des environnements LTU.
-             Elles permettent entre autre de dynamiser les différents niveaux de menus.</p>
+<dd><p>Description de mon nameSpace</p>
 </dd>
 <dt><a href="#screenHistory">screenHistory</a> : <code>object</code></dt>
-<dd><p>Les fonctions de ce namespace sont utilisées pour gérer les piles de navigation &quot;précédent&quot;, &quot;suivant&quot; dans l&#39;interface utilisateurs des envrionenemnts LTU.</p>
+<dd><p>Description de mon nameSpace</p>
 </dd>
 </dl>
 
@@ -49,7 +47,7 @@
 <a name="global"></a>
 
 ## global : <code>object</code>
-Les fonctions de ce namespace sont utilisées pour paramétrer l'interface utilisateur en activant ou désactivant certaines fonctionnalitées.             Elles sont à paramétrées à chaque nouveau projet.
+Description de mon nameSpace
 
 **Kind**: global namespace  
 
@@ -82,7 +80,7 @@ Description de ma fonction
 <a name="general"></a>
 
 ## general : <code>object</code>
-Les fonctions de ce namespace sont utilisées aussi bien dans l'interface utilisateurs que dans les autres fonctions du modules @LTU_scripts.
+Description de mon nameSpace
 
 **Kind**: global namespace  
 
@@ -171,7 +169,7 @@ Effectue des opérations d'audit en enregistrant des messages selon le type spé
 <a name="screenLayout"></a>
 
 ## screenLayout : <code>object</code>
-Les fonctions de ce namespace sont utilisées pour gérer la mise en page de l'interface utilisateur des environnements LTU.             Elles permettent entre autre de dynamiser les différents niveaux de menus.
+Description de mon nameSpace
 
 **Kind**: global namespace  
 
@@ -266,7 +264,7 @@ Cette fonction parcourt les éléments de navigation de second niveau fournis, p
 <a name="screenHistory"></a>
 
 ## screenHistory : <code>object</code>
-Les fonctions de ce namespace sont utilisées pour gérer les piles de navigation "précédent", "suivant" dans l'interface utilisateurs des envrionenemnts LTU.
+Description de mon nameSpace
 
 **Kind**: global namespace  
 
